@@ -1,9 +1,6 @@
-import { PropsWithChildren } from "react"
 import { Outlet } from "react-router-dom"
 
-type Props = PropsWithChildren<{}>
-
-export const DefaultLayout: React.FC<Props> = ({ children }) => (
+export const DefaultLayout: React.FC = () => (
   <>
     <header>header</header>
     <Outlet />
