@@ -4,14 +4,14 @@ import About from "~/pages/About/Index"
 import NotFound from "~/pages/NotFound/Index"
 import Top from "~/pages/Top/Index"
 
-const App: React.FC = () => (
+const Router: React.FC = () => (
   <Routes>
     <Route path="/" element={<DefaultLayout />}>
       <Route index element={<Top />} />
       <Route path="about" element={<About />} />
-      <Route path="*" element={<NotFound />} />
     </Route>
+    <Route path="*" element={<NotFound />} />
   </Routes>
 )
 
-export default App
+export default Router
