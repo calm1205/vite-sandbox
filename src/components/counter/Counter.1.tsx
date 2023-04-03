@@ -12,7 +12,7 @@ export const Counter1: FC = () => {
     <>
       <p className="">counter1: {counter.count}</p>
 
-      <Box mt="30px" display="flex" gap="10px">
+      <Box display="flex" gap="10px">
         <Button variant="contained" onClick={counter.increaseCount}>
           Increase count
         </Button>
