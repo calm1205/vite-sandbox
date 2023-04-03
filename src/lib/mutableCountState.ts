@@ -14,6 +14,12 @@ export const useMutableCountStore = create<Count>((set) => ({
     set((state) => {
       state.count.counter = state.count.counter + 1 // 通常はオブジェクトを直接操作はできない
       return state
+      // return {
+      //   count: {
+      //     id: state.count.id,
+      //     counter: state.count.counter + 1,
+      //   },
+      // }
     }),
   resetCount: () => set({ count: initialCount }),
 }))

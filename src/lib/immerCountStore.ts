@@ -2,7 +2,10 @@ import { create } from "zustand"
 import { immer } from "zustand/middleware/immer"
 
 export type Count = {
-  count: { id: string; counter: number }
+  count: {
+    id: string
+    counter: number
+  }
   increaseCount: () => void
   resetCount: () => void
 }
