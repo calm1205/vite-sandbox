@@ -1,12 +1,12 @@
 import { Box, Button } from "@mui/material"
 import { FC } from "react"
-import { useImmerCountStore } from "~/lib/immerCountStore"
+import { useMutableCountStore } from "~/lib/mutableCountState"
 
 /**
- * イミュータブルなCounter
+ * ミュータブルなCounter
  */
-export const ImmerCounter: FC = () => {
-  const counter = useImmerCountStore()
+export const MutableCounter: FC = () => {
+  const counter = useMutableCountStore()
 
   const isCloned = () => {
     const count = counter.count
@@ -17,7 +17,7 @@ export const ImmerCounter: FC = () => {
 
   return (
     <div>
-      <p>immutable counter: {counter.count.counter}</p>
+      <p>mutable counter: {counter.count.counter}</p>
 
       <Box display="flex" gap="10px" mt="10px">
         <Button variant="contained" onClick={counter.increaseCount}>

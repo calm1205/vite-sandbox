@@ -9,10 +9,10 @@ export const LocalStorageCounter: FC = () => {
   const counter = useLocalStorageCountStore()
 
   return (
-    <>
-      <p className="">persist localStorage counter: {counter.count}</p>
+    <div>
+      <p>persist localStorage counter: {counter.count}</p>
 
-      <Box display="flex" gap="10px">
+      <Box display="flex" gap="10px" mt="10px">
         <Button variant="contained" onClick={counter.increaseCount}>
           Increase count
         </Button>
@@ -20,6 +20,6 @@ export const LocalStorageCounter: FC = () => {
           Reset count
         </Button>
       </Box>
-    </>
+    </div>
   )
 }
