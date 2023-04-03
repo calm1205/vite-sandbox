@@ -3,9 +3,9 @@ import { persist, createJSONStorage } from "zustand/middleware"
 import { Count } from "./countStore"
 
 /**
- * localStorageに値を保存
+ * sessionStorageに値を保存
  */
-export const usePersistLocalCountStore = create<Count>()(
+export const useSessionStorageCountStore = create<Count>()(
   persist(
     (set) => ({
       count: 0,
@@ -14,7 +14,7 @@ export const usePersistLocalCountStore = create<Count>()(
     }),
     {
       name: "persist-storage",
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => sessionStorage),
     }
   )
 )

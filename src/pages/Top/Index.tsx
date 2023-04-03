@@ -1,8 +1,9 @@
 import { Box } from "@mui/material"
 import { FC } from "react"
-import { Counter1 } from "~/components/counter/Counter.1"
-import { Counter2 } from "~/components/counter/Counter.2"
-import { PersistLocalCounter } from "~/components/counter/PersistLocalCounter"
+import { Counter1 } from "~/components/Counter/Counter.1"
+import { Counter2 } from "~/components/Counter/Counter.2"
+import { LocalStorageCounter } from "~/components/PersistCounter/LocalStorageCounter"
+import { SessionStorageCounter } from "~/components/PersistCounter/SessionStorageCount"
 
 const Top: FC = () => {
   return (
@@ -11,7 +12,9 @@ const Top: FC = () => {
       <hr />
       <Counter2 />
       <hr />
-      <PersistLocalCounter />
+      <LocalStorageCounter />
+      <hr />
+      <SessionStorageCounter />
     </Box>
   )
 }

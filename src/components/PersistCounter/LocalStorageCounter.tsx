@@ -1,12 +1,12 @@
 import { Box, Button } from "@mui/material"
 import { FC } from "react"
-import { usePersistLocalCountStore } from "~/lib/persistLocalCountStore"
+import { useLocalStorageCountStore } from "~/lib/localStorageCountStore"
 
 /**
  * localStorageへ値を保存するカウンター
  */
-export const PersistLocalCounter: FC = () => {
-  const counter = usePersistLocalCountStore()
+export const LocalStorageCounter: FC = () => {
+  const counter = useLocalStorageCountStore()
 
   return (
     <>
