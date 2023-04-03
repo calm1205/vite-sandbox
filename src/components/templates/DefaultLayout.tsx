@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material"
 import { FC } from "react"
 import { Outlet } from "react-router-dom"
-import tw from "tailwindcss"
 
 export const DefaultLayout: FC = () => (
   <>
