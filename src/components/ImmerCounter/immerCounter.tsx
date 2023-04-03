@@ -8,13 +8,6 @@ import { useImmerCountStore } from "~/lib/immerCountStore"
 export const ImmerCounter: FC = () => {
   const counter = useImmerCountStore()
 
-  const isCloned = () => {
-    const count = counter.count
-    counter.increaseCount
-    const newCount = counter.count
-    console.log("isCloned", count.id === newCount.id)
-  }
-
   return (
     <div>
       <p>immutable counter: {counter.count.counter}</p>
@@ -25,9 +18,6 @@ export const ImmerCounter: FC = () => {
         </Button>
         <Button variant="outlined" onClick={counter.resetCount}>
           Reset count
-        </Button>
-        <Button variant="outlined" onClick={isCloned}>
-          isCloned
         </Button>
       </Box>
     </div>

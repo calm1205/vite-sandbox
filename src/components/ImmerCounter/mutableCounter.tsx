@@ -8,13 +8,6 @@ import { useMutableCountStore } from "~/lib/mutableCountState"
 export const MutableCounter: FC = () => {
   const counter = useMutableCountStore()
 
-  const isCloned = () => {
-    const count = counter.count
-    counter.increaseCount
-    const newCount = counter.count
-    console.log("isCloned", count.id === newCount.id)
-  }
-
   return (
     <div>
       <p>mutable counter: {counter.count.counter}</p>
@@ -25,9 +18,6 @@ export const MutableCounter: FC = () => {
         </Button>
         <Button variant="outlined" onClick={counter.resetCount}>
           Reset count
-        </Button>
-        <Button variant="outlined" onClick={isCloned}>
-          isCloned
         </Button>
       </Box>
     </div>

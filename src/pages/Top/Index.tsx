@@ -1,4 +1,4 @@
-import { Box, Card } from "@mui/material"
+import { Box } from "@mui/material"
 import { FC } from "react"
 import { Counter1 } from "~/components/Counter/Counter.1"
 import { Counter2 } from "~/components/Counter/Counter.2"
