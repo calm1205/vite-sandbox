@@ -1,6 +1,6 @@
 import { create } from "zustand"
 
-type Count = {
+export type Count = {
   count: number
   increaseCount: () => void
   resetCount: () => void
