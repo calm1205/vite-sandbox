@@ -6,6 +6,8 @@ import { ImmerCounter } from "~/components/ImmerCounter/immerCounter"
 import { MutableCounter } from "~/components/ImmerCounter/mutableCounter"
 import { LocalStorageCounter } from "~/components/PersistCounter/LocalStorageCounter"
 import { SessionStorageCounter } from "~/components/PersistCounter/SessionStorageCount"
+import { SliceFirstCounter } from "~/components/SliceCounter/SliceFirstCounter"
+import { SliceSecondCounter } from "~/components/SliceCounter/SliceSecondCounter"
 
 const Top: FC = () => {
   return (
@@ -26,6 +28,12 @@ const Top: FC = () => {
       <Box display="flex" gap="50px">
         <ImmerCounter />
         <MutableCounter />
+      </Box>
+
+      <hr />
+      <Box display="flex" gap="50px">
+        <SliceFirstCounter />
+        <SliceSecondCounter />
       </Box>
     </Box>
   )
