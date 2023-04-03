@@ -2,6 +2,7 @@ import { Box, Card } from "@mui/material"
 import { FC } from "react"
 import { Counter1 } from "~/components/Counter/Counter.1"
 import { Counter2 } from "~/components/Counter/Counter.2"
+import { ImmerCounter } from "~/components/ImmerCounter/immerCounter"
 import { LocalStorageCounter } from "~/components/PersistCounter/LocalStorageCounter"
 import { SessionStorageCounter } from "~/components/PersistCounter/SessionStorageCount"
 
@@ -15,6 +16,8 @@ const Top: FC = () => {
       <LocalStorageCounter />
       <hr />
       <SessionStorageCounter />
+      <hr />
+      <ImmerCounter />
     </Box>
   )
 }
