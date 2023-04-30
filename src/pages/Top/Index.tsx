@@ -11,7 +11,14 @@ import { SliceSecondCounter } from "~/components/SliceCounter/SliceSecondCounter
 const Top: FC = () => {
   return (
     <Box p="30px" display="flex" flexDirection="column" gap="30px">
-      <Link to="minimal" children="Minimal Counter" />
+      <ul>
+        <li>
+          <Link to="minimal" children="Minimal Counter" />
+        </li>
+        <li>
+          <Link to="immer" children="Immer Counter" />
+        </li>
+      </ul>
 
       <hr />
 
