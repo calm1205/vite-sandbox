@@ -4,7 +4,10 @@ import { Trigger } from "./Trigger"
 import { useCountStore } from "./useCountStore"
 
 /**
- * 再レンダリング 調査ページ
+ * NG: 再レンダリングしてしまうパターン
+ *
+ * 親コンポーネントでStoreを取り出してから子コンポーネントに譲渡。
+ * Storeの更新が走る度にこのコンポーネント自体がre-renderされる。
  */
 export const UnControlRerender = () => {
   const counter = useCountStore()

@@ -3,7 +3,10 @@ import { Counter } from "./Counter"
 import { Trigger } from "./Trigger"
 
 /**
- * 再レンダリングを制御
+ * OK: 再レンダリングを制御
+ *
+ * 親のコンポーネントではStoreは呼び出さない。
+ * CounterやTrigger等の使う場所でピンポイントに呼び出す。
  */
 export const ControlRerender = () => {
   console.log("Control parent")
