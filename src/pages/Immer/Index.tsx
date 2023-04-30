@@ -1,9 +1,9 @@
 import { Box } from "@mui/material"
-import { Counter1, Counter2 } from "~/components/Counter"
+import { ImmerCounter, MutableCounter } from "~/components/ImmerCounter"
 
 export const Immer = () => (
   <Box display="flex" gap="30px">
-    <Counter1 />
-    <Counter2 />
+    <ImmerCounter />
+    <MutableCounter />
   </Box>
 )
