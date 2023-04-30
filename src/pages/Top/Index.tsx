@@ -1,7 +1,6 @@
 import { Box } from "@mui/material"
 import { FC } from "react"
-import { Counter1 } from "~/components/Counter/Counter.1"
-import { Counter2 } from "~/components/Counter/Counter.2"
+import { Link } from "react-router-dom"
 import { ImmerCounter } from "~/components/ImmerCounter/immerCounter"
 import { MutableCounter } from "~/components/ImmerCounter/mutableCounter"
 import { LocalStorageCounter } from "~/components/PersistCounter/LocalStorageCounter"
@@ -12,10 +11,7 @@ import { SliceSecondCounter } from "~/components/SliceCounter/SliceSecondCounter
 const Top: FC = () => {
   return (
     <Box p="30px" display="flex" flexDirection="column" gap="30px">
-      <Box display="flex" gap="50px">
-        <Counter1 />
-        <Counter2 />
-      </Box>
+      <Link to="minimal" children="Minimal Counter" />
 
       <hr />
 
