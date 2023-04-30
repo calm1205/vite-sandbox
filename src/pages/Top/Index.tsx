@@ -12,7 +12,7 @@ const links: { to: string; children: string }[] = [
 export const Top: FC = () => (
   <ul>
     {links.map(({ to, children }) => (
-      <li key="to">
+      <li key={to}>
         <Link to={to} children={children} />
       </li>
     ))}
