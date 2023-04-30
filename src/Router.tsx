@@ -1,7 +1,15 @@
 import { Route, Routes } from "react-router-dom"
 import { DefaultLayout } from "~/components/templates/DefaultLayout"
 
-import { Immer, Minimal, NotFound, Persist, Slice, Top } from "./pages"
+import {
+  Immer,
+  Minimal,
+  NotFound,
+  Persist,
+  Rerender,
+  Slice,
+  Top,
+} from "./pages"
 
 const Router: React.FC = () => (
   <Routes>
@@ -12,6 +20,8 @@ const Router: React.FC = () => (
       <Route path="immer" element={<Immer />} />
       <Route path="persist" element={<Persist />} />
       <Route path="slice" element={<Slice />} />
+
+      <Route path="rerender" element={<Rerender />} />
     </Route>
     <Route path="*" element={<NotFound />} />
   </Routes>

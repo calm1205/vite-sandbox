@@ -1,19 +1,20 @@
 import { FC } from "react"
 import { Link } from "react-router-dom"
 
+const links: { to: string; children: string }[] = [
+  { to: "minimal", children: "Minimal Counter" },
+  { to: "immer", children: "Immer Counter" },
+  { to: "persist", children: "Persist Counter" },
+  { to: "slice", children: "Slice Counter" },
+  { to: "rerender", children: "Rerender Counter" },
+]
+
 export const Top: FC = () => (
   <ul>
-    <li>
-      <Link to="minimal" children="Minimal Counter" />
-    </li>
-    <li>
-      <Link to="immer" children="Immer Counter" />
-    </li>
-    <li>
-      <Link to="persist" children="Persist Counter" />
-    </li>
-    <li>
-      <Link to="slice" children="Slice Counter" />
-    </li>
+    {links.map(({ to, children }) => (
+      <li>
+        <Link to={to} children={children} />
+      </li>
+    ))}
   </ul>
 )
