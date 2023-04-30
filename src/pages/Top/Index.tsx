@@ -1,10 +1,6 @@
 import { Box } from "@mui/material"
 import { FC } from "react"
 import { Link } from "react-router-dom"
-import { ImmerCounter } from "~/components/ImmerCounter/immerCounter"
-import { MutableCounter } from "~/components/ImmerCounter/mutableCounter"
-import { LocalStorageCounter } from "~/components/PersistCounter/LocalStorageCounter"
-import { SessionStorageCounter } from "~/components/PersistCounter/SessionStorageCount"
 import { SliceFirstCounter } from "~/components/SliceCounter/SliceFirstCounter"
 import { SliceSecondCounter } from "~/components/SliceCounter/SliceSecondCounter"
 
@@ -18,20 +14,10 @@ const Top: FC = () => {
         <li>
           <Link to="immer" children="Immer Counter" />
         </li>
+        <li>
+          <Link to="persist" children="Persist Counter" />
+        </li>
       </ul>
-
-      <hr />
-
-      <Box display="flex" gap="50px">
-        <LocalStorageCounter />
-        <SessionStorageCounter />
-      </Box>
-
-      <hr />
-      <Box display="flex" gap="50px">
-        <ImmerCounter />
-        <MutableCounter />
-      </Box>
 
       <hr />
       <Box display="flex" gap="50px">
