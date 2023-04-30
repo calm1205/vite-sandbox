@@ -1,9 +1,12 @@
 import { Box } from "@mui/material"
-import { Counter1, Counter2 } from "~/components/Counter"
+import {
+  LocalStorageCounter,
+  SessionStorageCounter,
+} from "~/components/PersistCounter"
 
 export const Persist = () => (
   <Box display="flex" gap="30px">
-    <Counter1 />
-    <Counter2 />
+    <LocalStorageCounter />
+    <SessionStorageCounter />
   </Box>
 )
