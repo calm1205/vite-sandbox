@@ -1,9 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { DefaultLayout } from "~/components/templates/DefaultLayout"
-import About from "~/pages/About/Index"
-import NotFound from "~/pages/NotFound/Index"
-import Top from "~/pages/Top/Index"
-import { Immer, Minimal, Persist, Slice } from "./pages"
+
+import { Immer, Minimal, NotFound, Persist, Slice, Top } from "./pages"
 
 const Router: React.FC = () => (
   <Routes>
@@ -14,8 +12,6 @@ const Router: React.FC = () => (
       <Route path="immer" element={<Immer />} />
       <Route path="persist" element={<Persist />} />
       <Route path="slice" element={<Slice />} />
-
-      <Route path="about" element={<About />} />
     </Route>
     <Route path="*" element={<NotFound />} />
   </Routes>

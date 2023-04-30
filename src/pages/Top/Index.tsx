@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Link } from "react-router-dom"
 
-const Top: FC = () => (
+export const Top: FC = () => (
   <ul>
     <li>
       <Link to="minimal" children="Minimal Counter" />
@@ -17,5 +17,3 @@ const Top: FC = () => (
     </li>
   </ul>
 )
-
-export default Top
