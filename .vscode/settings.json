@@ -11,5 +11,6 @@
   "files.autoSave": "onFocusChange",
   "workbench.colorTheme": "One Dark Pro",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.ignoreWords": ["zustand"]
 }
